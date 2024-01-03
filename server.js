@@ -5,7 +5,7 @@ import cors from "cors";
 const app = express();
 app.use(
   cors({
-    origin: "*",
+    origin: "https://crypto-currency-converter-app.vercel.app/",
   })
 );
 app.use(express.json());
