@@ -3,11 +3,7 @@ import router from "./routes/route.js";
 import cors from "cors";
 
 const app = express();
-app.use(
-  cors({
-    origin: "https://crypto-currency-converter-app.vercel.app/",
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use("/fetch", router);
 app.get("/", (req, res) => {
